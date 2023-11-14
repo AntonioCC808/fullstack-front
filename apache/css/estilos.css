@@ -1,0 +1,56 @@
+
+*{
+    font-family: Verdana;
+}
+
+.cliente {
+    background-color: #55ccff;
+    }
+
+.pedido {
+    background-color: #40ccbb;
+    }
+
+.logo-title {
+    display: inline-block;
+    text-align: center;
+    font-size: 75px;
+}
+
+.inlineblock {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.form-cliente {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-cliente label,
+.form-cliente input[type="text"],
+.form-cliente input[type="date"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+.form-cliente label {
+    width: 100px;
+}
+
+.form-pedido{
+    display: block;
+    margin-bottom: 10px;
+}
+.form-pedido label {
+    display: inline-block;
+    vertical-align: middle;
+}
+.form-pedido label {
+    width: 100px;
+}
+
+.checkbox-label {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+}
