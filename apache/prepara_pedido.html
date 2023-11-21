@@ -51,11 +51,13 @@
             <div class="form-pedido">
                 <label for="size">Tamaño</label>
                 <select id="size" name="size">
-                    <option id="1">pequeña</option>
-                    <option id="2" selected>mediana</option>
-                    <option id="3">grande</option>
-                    <option id="4">XXL</option>
-                    </select>
+                    <option value="" selected>Selecciona una opción...</option>
+                    <option id="1" value="S">pequeña</option>
+                    <option id="2" value="M">mediana</option>
+                    <option id="3" value="L">grande</option>
+                    <option id="4" value="XXL">XXL</option>
+                </select>
+                <span id="resultado_tamano"></span>
             </div>
             
             <div id="ingredientes" class="form-pedido">

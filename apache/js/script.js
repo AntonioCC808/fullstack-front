@@ -32,7 +32,7 @@ function checker() {
 
 
 // Function to validate form fields with jquery
-function checker_jquery() {
+$(function checker_jquery() {
     $("#form-client").submit(function (event) {
         if ($("#nombre").val() === ""){
             event.preventDefault();
@@ -49,8 +49,25 @@ function checker_jquery() {
             $("#apellidos-id").css("color", "");
         }
     });
-};
-    
+});
 
-checker_jquery();
+function check_availabilty(size_code){
+    $.ajax({
+        type: "POST",
+        url: "http://localhost:5000/checksize",
+        data: {
+            size: size_code
+        },
+        success: function (result) {
+        $("#resultado_tamano").text(result);
+        }
+    });
+}
+
+$(function a() {
+    $("#size").on('change', function() {
+        console.log(this.value);
+        check_availabilty(this.value)
+    });
+});
 
