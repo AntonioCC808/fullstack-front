@@ -64,7 +64,7 @@ function check_availabilty(size_code){
     });
 }
 
-$(function a() {
+$(function () {
     $("#size").on('change', function() {
         console.log(this.value);
         check_availabilty(this.value)
